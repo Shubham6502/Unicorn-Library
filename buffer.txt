@@ -1,0 +1,8 @@
+ <!-- <?php
+    if(isset($_REQUEST["mode"])){
+        if($_REQUEST["mode"]=="alr"){
+            echo"<script>alert('Alredy Reserved')</script>";
+        }
+
+    }
+    ?> -->

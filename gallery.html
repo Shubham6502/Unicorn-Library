@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Unicorn</title>
+</head>
+
+<body>
+
+
+    <div class="main">
+        <div class="main-con">
+            <div class="nav">
+
+                <div class="nav-logo">
+                    <img src="unicorn.png">
+                    <span>Unicorn</span>
+                </div>
+                <input type="submit" name="" id="check" value="" onclick="return check();">
+                <input type="submit" name="" id="uncheck" value="" onclick="return uncheck();">
+                <label for="check" id="checkbtn"><i class="fa-solid fa-bars"></i></label>
+
+
+                <div class="nav-menu">
+                    <h4>Home</h4>
+                    <h4>About</h4>
+                    <h4>Contact</h4>
+                    <h4>Account</h4>
+
+                </div>
+            </div>
+            <ul>
+                <label for="uncheck" id="uncheckbtn"><i class="fa-regular fa-circle-xmark"></i></i></label>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Gallery</a></li>
+            </ul>
+
+            <!-- <div class="content">
+            
+          
+        </div> -->
+            <div class="heading">
+                <h2>Seating Arrangement</h2>
+                <img src="underline.png" alt="">
+            </div>
+
+
+            <div class="seats">
+                <div class="row">
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <!-- <div class="s1 blank door"></div> -->
+                    <div class="s1 blank door">ENTRY</div>
+                    <div class="s1 desk" id="1">1</div>
+                    <div class="s1 desk" id="2">2</div>
+                    <div class="s1 desk" id="3">3</div>
+                    <div class="s1 desk" id="4">4</div>
+                    <div class="s1 desk" id="5">5</div>
+                    <div class="s1 desk" id="6">6</div>
+                    <div class="s1 desk" id="7">7</div>
+                </div>
+                <div class="row">
+                    <div class="s1 desk ss37"  onmouseover="return reserv()">37</div>
+                    <div class="s1 desk ss38" >38</div>
+                    <div class="s1 desk ss39">39</div>
+                    <div class="s1 desk ss40">40</div>
+                    <div class="s1 blank "></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                </div>
+
+                <div class="row">
+
+                    <div class="s1 desk ss41">41</div>
+                    <div class="s1 desk ss42">42</div>
+                    <div class="s1 desk ss43">43</div>
+                    <div class="s1 desk" id="44">44</div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 desk" id="8">8</div>
+
+                </div>
+                <div class="row">
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 desk" id="36">36</div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 desk" id="9">9</div>
+                </div>
+                <div class="row">
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 desk" id="35">35</div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 desk" id="16">16</div>
+                    <div class="s1 desk" id="15">15</div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 desk" id="10">10</div>
+                </div>
+                <div class="row">
+                    <div class="s1 desk" id="45">45</div>
+                    <div class="s1 desk" id="46">46</div>
+                    <div class="s1 desk" id="47">47</div>
+                    <div class="s1 desk" id="48">48</div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 desk" id="34">34</div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 desk" id="17">17</div>
+                    <div class="s1 desk" id="14">14</div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 desk" id="11">11</div>
+                </div>
+                <div class="row">
+                    <div class="s1 desk" id="52">52</div>
+                    <div class="s1 desk" id="51">51</div>
+                    <div class="s1 desk" id="50">50</div>
+                    <div class="s1 desk" id="49">49</div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 desk" id="33">33</div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 desk" id="18">18</div>
+                    <div class="s1 desk" id="13">13</div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 desk" id="12">12</div>
+                </div>
+                <div class="row">
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                </div>
+                <div class="row">
+                    <div class="s1 desk" id="53">53</div>
+                    <div class="s1 desk" id="54">54</div>
+                    <div class="s1 desk" id="55">55</div>
+                    <div class="s1 desk" id="56">56</div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 desk" id="57">57</div>
+                    <div class="s1 desk" id="58">58</div>
+                    <div class="s1 desk" id="59">59</div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 desk" id="19">19</div>
+                    <div class="s1 desk" id="20">20</div>
+                    <div class="s1 desk" id="21">21</div>
+                    <div class="s1 desk" id="22">22</div>
+                </div>
+                <div class="row">
+                    <div class="s1 desk" id="60">60</div>
+                    <div class="s1 desk" id="61">61</div>
+                    <div class="s1 desk" id="62">62</div>
+                    <div class="s1 desk" id="63">63</div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 desk" id="64">64</div>
+                    <div class="s1 desk" id="65">65</div>
+                    <div class="s1 desk" id="66">66</div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 desk" id="23">23</div>
+                    <div class="s1 desk" id="24">24</div>
+                    <div class="s1 desk" id="25">25</div>
+                    <div class="s1 desk" id="26">26</div>
+                </div>
+                <div class="row">
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                </div>
+                <div class="row">
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                </div>
+                <div class="row">
+                    <div class="s1 desk" id="74">74</div>
+                    <div class="s1 desk" id="73">73</div>
+                    <div class="s1 desk" id="72">72</div>
+                    <div class="s1 desk" id="71">71</div>
+                    <div class="s1 desk" id="70">70</div>
+                    <div class="s1 desk" id="69">69</div>
+                    <div class="s1 desk" id="68">68</div>
+                    <div class="s1 desk" id="67">67</div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 blank"></div>
+                    <div class="s1 desk" id="32">32</div>
+                    <div class="s1 desk" id="31">31</div>
+                    <div class="s1 desk">30</div>
+                    <div class="s1 desk">29</div>
+                    <div class="s1 desk">28</div>
+                    <div class="s1 desk">27</div>
+                </div>
+
+
+            </div>
+
+            <button><a href="bookseat.php">Book Seat</a></button>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <script>
+            function check() {
+
+                // One liner function:
+                const addCSS = css => document.head.appendChild(document.createElement("style")).innerHTML = css;
+
+                // Usage: 
+                addCSS("ul{left:0}")
+                return true;
+            }
+            function uncheck() {
+
+                // One liner function:
+                const addCSS = css => document.head.appendChild(document.createElement("style")).innerHTML = css;
+
+                // Usage: 
+                addCSS("ul{left:-120%}")
+                return true;
+
+            }
+
+            function reserv() {
+                const addCSS = css => document.head.appendChild(document.createElement("style")).innerHTML = css;
+
+                // Usage: 
+                for(let i=1;i<50;i++){
+                    
+                    txt=".ss"+i;
+                    
+                   
+                addCSS(txt+"{background-color:red}")
+               
+                }
+
+            }
+        </script>
+    </div>
+    <div class="foot">
+        @All Copyright Reserved By Shubham Patil & Shubham Gavade
+    </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Unicorn</title>
+</head>
+
+<body>
+
+
+    <div class="main">
+        <div class="main-con">
+        <div class="nav">
+
+            <div class="nav-logo">
+                <img src="unicorn.png">
+                <span>Unicorn</span>
+            </div>
+            <input type="submit" name="" id="check" value="" onclick="return check();">
+            <input type="submit" name="" id="uncheck" value="" onclick="return uncheck();">
+            <label for="check" id="checkbtn"><i class="fa-solid fa-bars"></i></label>
+           
+            
+            <div class="nav-menu">
+                <h4><a href="index.html">Home</a></h4>
+                <h4><a href="about.html">About</a></h4>
+                <h4><a href="contact.html" style="color:gray">Contact</a></h4>
+                <h4><a href="gallery.php">Reservation</a></h4>
+
+            </div>
+        </div>
+        <ul>
+            <label for="uncheck" id="uncheckbtn"><i class="fa-regular fa-circle-xmark"></i></i></label>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.php">Reservation</a></li>
+        </ul>
+
+        <!-- <div class="content">
+            
+          
+        </div> -->
+        <div class="heading" >
+            <h2>Contact</h2>
+            <img src="underline.png" alt="">
+        </div>
+        
+        
+        <div class="contact">
+            <div class="email">
+                <i class="fa-regular fa-envelope"></i>
+                <a href="mailto:unicornstudyroom@gmail.com">Send email</a>
+
+            </div>
+            <div class="email">
+                <i class="fa-solid fa-address-book"></i>
+                <a href="tel:+919370225151">+91 9370225151</a>
+
+            </div>
+            <div class="email">
+                <i class="fa-brands fa-youtube"></i>
+                <a href="https://www.youtube.com/@dreamItYou">Youtube-Unicorn</a>
+
+            </div>
+
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.591955258185!2d74.24348667343564!3d16.697290322321862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc101d724b97895%3A0x4563f7f4e8351c87!2sUnicorn%20Study%20Room!5e0!3m2!1sen!2sin!4v1690559433765!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+        
+
+
+     
+
+
+        
+        <script>
+            function check() {
+               
+                // One liner function:
+                const addCSS = css => document.head.appendChild(document.createElement("style")).innerHTML = css;
+
+                // Usage: 
+                addCSS("ul{left:0}")
+                return true;
+            }
+            function uncheck(){
+               
+                // One liner function:
+                const addCSS = css => document.head.appendChild(document.createElement("style")).innerHTML = css;
+
+                // Usage: 
+                addCSS("ul{left:-120%}")
+                return true;
+
+            }
+        </script>
+        </div>
+        <div class="foot">
+            @All Copyright Reserved By Shubham Patil
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

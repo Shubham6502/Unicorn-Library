@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Unicorn</title>
+</head>
+
+<body>
+
+
+    <div class="main">
+        <div class="main-con">
+        <div class="nav">
+
+            <div class="nav-logo">
+                <img src="unicorn.png">
+                <span>Unicorn</span>
+            </div>
+            <input type="submit" name="" id="check" value="" onclick="return check();">
+            <input type="submit" name="" id="uncheck" value="" onclick="return uncheck();">
+            <label for="check" id="checkbtn"><i class="fa-solid fa-bars"></i></label>
+           
+            
+            <div class="nav-menu">
+                <h4><a href="index.html">Home</a></h4>
+                <h4><a href="contact.html">About</a></h4>
+                <h4><a href="contact.html" style="color:gray">Contact</a></h4>
+                <h4><a href="gallery.php">Reservation</a></h4>
+
+            </div>
+        </div>
+        <ul>
+            <label for="uncheck" id="uncheckbtn"><i class="fa-regular fa-circle-xmark"></i></i></label>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.php">Reservation</a></li>
+        </ul>
+
+        <!-- <div class="content">
+            
+          
+        </div> -->
+       
+       <div class="request">
+        <img src="submitted 1.gif" alt="submitted 1" 
+        style="width:150px;height:150px;margin-top: 3vw ;">
+
+        
+        <h2>Thank You </h2>
+
+        <div class="blink1"><span1><p10>Your Request Has been successfully submited. 
+            You will get an update soon.</p10></span1></div>
+        
+        
+
+        <p1>Regards</p1>
+        <b>UNICORN Management Team</b>
+        <i class="fa-solid fa-handshake-simple"></i>
+        <h5>GO TO <a href="index.html">HOME</a></h5>
+       </div>
+
+      
+       
+
+       <div class="wrapper">
+        <div class="marquee">
+          <p>
+             <img src="alert.gif" alt="UNICORN" width="25vw" height="25vw""> 
+            We retain the right to  <p style="color:red" > Postpone or Cancle </p> your admission at any time.   </p>
+          <p>
+            <img src="alert.gif" alt="UNICORN"  width="25vw" height="25vw"> 
+            <p style="color:red" > Limited Seats </p>.
+             Admission will be given on  <p style="color:red"> " FIRST COME FIRST SERVED " </p>  basis.          </p>
+            
+          <p>
+            <img src="alert.gif" alt="UNICORN" width="25vw" height="25vw" >
+             <p style="color:red">ALL rights reserved by Unicorn Management.
+        </div>
+      </div>.
+        
+
+
+     
+
+
+        
+        <script>
+            function check() {
+               
+                // One liner function:
+                const addCSS = css => document.head.appendChild(document.createElement("style")).innerHTML = css;
+
+                // Usage: 
+                addCSS("ul{left:0}")
+                return true;
+            }
+            function uncheck(){
+               
+                // One liner function:
+                const addCSS = css => document.head.appendChild(document.createElement("style")).innerHTML = css;
+
+                // Usage: 
+                addCSS("ul{left:-120%}")
+                return true;
+
+            }
+        </script>
+        </div>
+        <div class="foot">
+            @All Copyright Reserved By Shubham Patil
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
